@@ -1,0 +1,28 @@
+.navicon {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .navicon:hover, 
+.dark-mode .navicon:focus {
+    background-color: #4A5568; /* gray-600 */
+    color: #fff; /* white */
+}
+
+.dark-mode .navicon {
+    color: #E2E8F0; /* gray-200 */
+}
+
+.navicon:hover,
+.navicon:focus {
+    background-color: #E2E8F0; /* gray-200 */
+    color: #1A202C; /* gray-900 */
+}

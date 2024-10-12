@@ -1,0 +1,50 @@
+{% extends "index.html" %} {% block title %}Signup{% endblock %}
+{% block content %}
+
+<section class="flex flex-col">
+    <div class="container max-w-sm mb-10 mx-auto flex-1 flex flex-col items-center justify-center px-2">
+        <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
+            <h1 class="mb-8 text-3xl text-center">Sign up</h1>
+            <form method="POST">
+                <label for="name" class="text-semibold text-slate-500 text-lg">Name</label>
+                <input 
+                type="text"
+                class="block border border-grey-light w-full p-3 rounded mb-4"
+                id="name"
+                name="name"
+                placeholder="Your name here" />
+                
+                <label for="email" class="text-semibold text-slate-500 text-lg">Email</label>
+                <input 
+                type="text"
+                class="block border border-grey-light w-full p-3 rounded mb-4"
+                id="email"
+                name="email"
+                placeholder="Enter a valid email" />
+                
+                <label for="password" class="text-semibold text-slate-500 text-lg">Password</label>
+                <input 
+                type="password"
+                class="block border border-grey-light w-full p-3 rounded mb-4"
+                id="password"
+                name="password"
+                placeholder="Enter a strong password" />
+                
+                <label for="confirm_password" class="text-semibold text-slate-500 text-lg">Confirm Password</label>
+                <input 
+                    type="password"
+                    class="block border border-grey-light w-full p-3 rounded mb-4"
+                    id="confirm_password"
+                    name="confirm_password"
+                    placeholder="Re-enter your password" />
+    
+                <button type="submit" class="w-full text-center py-3 rounded bg-green-500 text-white hover:bg-green-600 my-1">Create Account</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% endblock %}
